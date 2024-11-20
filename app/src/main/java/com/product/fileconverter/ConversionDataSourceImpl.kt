@@ -1,8 +1,8 @@
 package com.product.fileconverter
 
 import android.content.Context
-import com.arthenica.mobileffmpeg.FFmpeg
 import com.arthenica.mobileffmpeg.ExecuteCallback
+import com.arthenica.mobileffmpeg.FFmpeg
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.Dispatchers
@@ -66,7 +66,8 @@ class ConversionDataSourceImpl @Inject constructor(
     }
 
     private fun loadConversionMapFromJson(): Map<String, List<FileFormat>> {
-        val jsonString = context.assets.open("conversion_map.json").bufferedReader().use { it.readText() }
+        val jsonString =
+            context.assets.open("conversion_map.json").bufferedReader().use { it.readText() }
         val type = object : TypeToken<Map<String, List<FileFormat>>>() {}.type
         return Gson().fromJson(jsonString, type)
     }
