@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fileConversionFragment">
+
+    <fragment
+        android:id="@+id/fileConversionFragment"
+        android:name="com.product.fileconverter.FileConversionFragment"
+        android:label="File Conversion"
+        tools:layout="@layout/fragment_file_conversion" />
+</navigation>

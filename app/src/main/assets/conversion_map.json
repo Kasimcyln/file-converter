@@ -1,0 +1,18 @@
+{
+  "pdf": [
+    { "name": "DOCX", "extension": "docx" },
+    { "name": "TXT", "extension": "txt" },
+    { "name": "HTML", "extension": "html" },
+    { "name": "EPUB", "extension": "epub" }
+  ],
+  "mp4": [
+    { "name": "AVI", "extension": "avi" },
+    { "name": "MKV", "extension": "mkv" },
+    { "name": "MOV", "extension": "mov" },
+    { "name": "WMV", "extension": "wmv" }
+  ],
+  "png": [
+    { "name": "JPEG", "extension": "jpg" },
+    { "name": "GIF", "extension": "gif" }
+  ]
+}
